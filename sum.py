@@ -1,7 +1,10 @@
-def sum_of_two(arr):
-    return arr[0] +arr[1]
+# python3
 
 
-x= [1,2]
+def sum_of_two_digits(first_digit, second_digit):
+    int(first_digit) + int(second_digit)
+    return first_digit + second_digit
 
-print(sum_of_two(x))
+if __name__ == '__main__':
+    a, b = map(int, input().split())
+    print(sum_of_two_digits(a, b))
